@@ -207,23 +207,25 @@ p{
     justify-content: center;
     align-items: center;
     height: 2000px;
-  }
+    justify-content: space-evenly;
+    }
 
   .card{
+    margin: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: fit-content;
     min-height: 750px;
     width: 80vw;
-  }
+    }
   .sedans{
     padding: 10%;
     transition: none;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
-  }
+    }
   /*Honestly I did't found how to remove :hover effect in media screen mode*/
   .sedans:hover{
     transform: none;
@@ -231,15 +233,15 @@ p{
     border-top-right-radius: 12px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-  }
+    }
   .suv{
     padding: 10%;
     transition: none;
-  }
+    }
   .suv:hover{
     transform: none;
     border-radius: 0;
-  }
+    }
   .luxury{
     padding: 10%;
     transition: none;
@@ -247,16 +249,13 @@ p{
     border-top-right-radius: 0;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-  }
+    }
   .luxury:hover{
     transform: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-  }
+    }
 
-  .attribution{
   }
-
- }

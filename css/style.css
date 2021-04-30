@@ -1,141 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
 
 *{
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 15px;
   padding: 0;
-  font-family: 'Kumbh Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 :root{
-  --dc: hsl(185, 75%, 39%);
-  --vddb: hsl(229, 23%, 23%);
-  --dgb: hsl(227, 10%, 46%);
-  --dg:hsl(0, 0%, 59%);
-  --vg:#cccccc;
-  }
+  --bo:hsl(31, 77%, 52%);
+  --dc:hsl(184, 100%, 22%);
+  --vdc:hsl(179, 100%, 13%);
+  --twp:hsla(0, 0%, 100%, 0.75);
+  --vlg:hsl(0, 0%, 95%);
+}
+
 body{
-  display: flex;
+  display:flex;
   flex-direction: column;
+  background-color: var(--vlg);
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background:url(../images/bg-pattern-top.svg), url(../images/bg-pattern-top.svg);
-  background-position:left -80px top -430px, right 50px bottom -450px;
-  background-repeat:no-repeat,no-repeat;
-  background-color: var(--dc);
-
 }
-
 h1{
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--vlg);
   height: auto;
   width: 100%;
-  color: var(--vddb);
+  margin-top: 15%;
+  font-size: 2.8rem;
 }
-span{
-  color: var(--dg);
-  font-size: 16px;
-  font-weight: lighter;
-}
-h4{
-  color: var(--dg);
-  font-size: 15px;
-  margin-top: -3%;
-  font-weight: lighter;
+p{
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--twp);
+  width: 82%;
+  line-height: 1.6;
 }
 
-ul{
-  list-style: none;
-}
 .card{
+  margin-top: 10%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   align-content: space-evenly;
-  max-width: 450px;
   max-height: 800px;
-  border-radius: 20px;
-  border-color: var(--dc);
-  border-width: thin;
-  background-color: white;
+  max-width: 1100px;
 }
-
-.top_card{
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 20%;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/bg-pattern-card.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.info{
-  display: flex;
-  flex-direction: column;
-  align-content: space-evenly;
-  align-items: center;
-  padding-left: 120px;
-  padding-right: 120px
-}
-
 .img{
   position: relative;
-  margin-top: -12%;
-  margin-right: 20%;
-  margin-left: 20%;
-  border: 5px solid white;
-  border-radius: 50px;
+  height: 20%;
+  width: 20%;
 }
-
-.stats{
-  padding-top: 2%;
-  padding-bottom: 2%;
-  height: auto;
-  width: 100%;
+.sedans{
+  position: relative;
   display: flex;
-  flex-direction: row;
-  border-top: solid var(--vg);
-  border-width: thin;
-  justify-content: space-evenly;
+  flex:33%;
+  flex-direction: column;
+  background-color: var(--bo);
+  padding: 5%;
+  align-content: center;
+  transition: transform .3s;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+.sedans:hover{
+  transform: scale(1.1);
+  border-radius: 12px;
+}
+.suv{
+  display: flex;
+  flex:33%;
+  flex-direction: column;
+  background-color: var(--dc);
+  padding: 5%;
+  align-content: center;
+  transition: transform .3s;
+}
+.suv:hover{
+  transform: scale(1.1);
+  border-radius: 12px;
+}
+.luxury{
+  display: flex;
+  flex:33%;
+  flex-direction: column;
+  background-color: var(--vdc);
+  padding: 5%;
+  align-content: center;
+  transition: transform .3s;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.luxury:hover{
+  transform: scale(1.1);
+  border-radius: 12px;
 }
 
-.value{
-  font-weight:bold;
-  color: var(--vddb);
-  align-items: center;
+.button1 {
+    margin-top: 30%;
+    height: auto;
+    width: 70%;
+   -webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
+   color: var(--bo);
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 15px;
+   font-weight: 100;
+   padding: 15px;
+   background-color: var(--vlg);
+   border: solid var(--vlg) 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
 }
 
-.type{
-  font-size: 12px;
-  font-weight: lighter;
-  color: var(--dg);
-  line-height: 2;
-  align-items: center;
+.button1:hover {
+   background: var(--bo);
+   border: solid var(--vlg) 1px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration:none;
+  color:var(--vlg);
+}
+.button2 {
+    margin-top: 30%;
+    height: auto;
+    width: 70%;
+   -webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
+   color: var(--dc);
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 15px;
+   font-weight: 100;
+   padding: 15px;
+   background-color: var(--vlg);
+   border: solid var(--vlg) 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
 }
 
-.attribution {
-margin-top: 10%;
-font-size: 11px;
-text-align: center;
+.button2:hover {
+   background: var(--dc);
+   border: solid #F2F2F2 1px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration:none;
+  color:var(--vlg);
+}
+
+.button3 {
+    margin-top: 30%;
+    height: auto;
+    width: 70%;
+   -webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
+   color: var(--vdc);
+   font-family: 'Lexend Deca', sans-serif;
+   font-size: 15px;
+   font-weight: 100;
+   padding: 15px;
+   background-color: var(--vlg);
+   border: solid var(--vlg) 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.button3:hover {
+   background: var(--vdc);
+   border: solid #F2F2F2 1px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration:none;
+  color:var(--vlg);
+}
+
+
+
+.attribution{
+  margin: 8%;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
-color: hsl(228, 45%, 44%);
-}
+  color: hsl(228, 45%, 44%);
+ }
 
-@media screen and (max-width: 750px){
+ @media screen and (max-width: 750px)
+ {
   body{
-    background-color: var(--dc);
-   background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
-   background-position: left -670px top -580px, right -770px bottom -500px;
-   background-repeat: no-repeat, no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2000px;
+    }
 
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  .card{
+    margin: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    min-height: 750px;
+    width: 80vw;
+    }
+  .sedans{
+    padding: 10%;
+    transition: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    }
+  /*Honestly I did't found how to remove :hover effect in media screen mode*/
+  .sedans:hover{
+    transform: none;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    }
+  .suv{
+    padding: 10%;
+    transition: none;
+    }
+  .suv:hover{
+    transform: none;
+    border-radius: 0;
+    }
+  .luxury{
+    padding: 10%;
+    transition: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    }
+  .luxury:hover{
+    transform: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    }
+
   }
-}
